@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id='favicon' rel="shortcut icon" href="./assets/l.png" type="image/x-png">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -51,16 +52,25 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="scrollToContact()">
+          <button class="btn btn-color-1" onclick="showPopup()">
             Contact Info
           </button>
+        </div>
+        <div id="contactPopup" class="popup">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Contact Info</h3>
+            <p><strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/tushar-vashistha-8241171ab" target="_blank">linkedin.com/in/tushar-vashistha-8241171ab</a></p>
+            <p><strong>Website:</strong> <a href="https://tusharvashistha26.github.io/Portfolio/" target="_blank">tusharvashistha26.github.io/Portfolio/</a></p>
+            <p><strong>Email:</strong> <a href="mailto:tusharvashistha.write@gmail.com">tusharvashistha.write@gmail.com</a></p>
+          </div>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='linkedin.com/in/tushar-vashistha-8241171ab'"
+            onclick="location.href='https://www.linkedin.com/in/tushar-vashistha-8241171ab/'"
           />
           <img
             src="./assets/github.png"
@@ -203,8 +213,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>MongoDB</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -214,7 +224,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>MongoDB & Robo3T</h3>
+                  <h3>Robo3T</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -480,13 +490,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/tusharvashistha26/Portfolio'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://tusharvashistha26.github.io/Portfolio/'"
               >
                 Live Demo
               </button>
@@ -510,7 +520,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="redirectTo404()"
               >
                 Live Demo
               </button>
@@ -524,7 +534,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Automated Driver Drowsiness Detection</h2>
+            <h2 class="experience-sub-title project-title">Driver Drowsiness Detection</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -534,7 +544,7 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="redirectTo404()"
               >
                 Live Demo
               </button>
@@ -567,7 +577,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="linkedin.com/in/tushar-vashistha-8241171ab">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/tushar-vashistha-8241171ab/">LinkedIn</a></p>
         </div>
       </div>
     </section>
